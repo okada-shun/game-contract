@@ -2,9 +2,10 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20Mintable.sol";
 
 //Solidity 0.5
-contract GameToken is ERC20Burnable {
+contract GameToken is ERC20Burnable, ERC20Mintable {
 
   string public name = "GameToken";
   string public symbol = "GT";
