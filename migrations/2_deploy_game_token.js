@@ -10,6 +10,8 @@ module.exports = function(deployer) {
     try {
       fs.writeFileSync('../game-api/GameToken_address.txt', instance.address);
       fs.writeFileSync('../game-api/GameToken.abi', JSON.stringify(instance.abi));
+      fs.writeFileSync('../game-api-gin/gmtoken/GameToken_address.txt', instance.address);
+      fs.writeFileSync('../game-api-gin/gmtoken/GameToken.abi', JSON.stringify(instance.abi));
     } catch (err) {
       console.log(err);
     }
